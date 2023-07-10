@@ -8,4 +8,4 @@ Client-to-Client Communication: The system enables direct communication between 
 Users can exchange messages, collaborate, and engage in real-time conversations.
 
 Chatbot Functionality: In addition to client-to-client communication, the system also incorporates chatbot functionality.
-Users can interact with a conversational AI chatbot that can respond to queries, provide information, and offer assistance.
+Users can interact with a conversational MirdoBot that can provide information, and offer assistance.
