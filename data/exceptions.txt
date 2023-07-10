@@ -1,0 +1,21 @@
+Exception handling enables a program to deal with exceptional situations and 
+continue its normal execution.
+Runtime errors occur while a program is running if the JVM detects an operation that is 
+impossible to carry out. For example, if you access an array using an index that is out of 
+bounds, you will get a runtime error with an ArrayIndexOutOfBoundsException. If you 
+enter a double value when your program expects an integer, you will get a runtime error with 
+an InputMismatchException.
+In Java, runtime errors are thrown as exceptions. An exception is an object that represents 
+an error or a condition that prevents execution from proceeding normally. If the exception is 
+not handled, the program will terminate abnormally. How can you handle the exception so 
+that the program can continue to run or else terminate gracefully? This chapter introduces this 
+subject and text input and output.
+
+Exceptions are objects, and objects are defined using classes. 
+The Throwable class is the root of exception classes. All Java exception classes inherit 
+directly or indirectly from Throwable. You can create your own exception classes by extending Exception or a subclass of Exception.
+The exception classes can be classified into three major types: system errors, exceptions, 
+and runtime exceptions.
+	 ■ System errors are thrown by the JVM and are represented in the Error class. The 
+	Error class describes internal system errors, though such errors rarely occur. If one 
+	does, there is little you can do beyond notifying the user and trying to terminate the program gracefully.

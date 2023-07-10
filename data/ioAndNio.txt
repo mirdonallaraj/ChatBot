@@ -1,0 +1,31 @@
+Files can be classified as either text or binary. A file that can be processed (read, created, or 
+modified) using a text editor such as Notepad on Windows or vi on UNIX is called a text file.
+All the other files are called binary files. You cannot read binary files using a text editor—they 
+are designed to be read by programs. For example, Java source programs are text files and can 
+be read by a text editor, but Java class files are binary files and are read by the JVM.
+Although it is not technically precise and correct, you can envision a text file as consisting 
+of a sequence of characters and a binary file as consisting of a sequence of bits. Characters 
+in a text file are encoded using a character encoding scheme such as ASCII or Unicode. For 
+example, the decimal integer 199 is stored as a sequence of three characters 1, 9, 9 in a text 
+file, and the same integer is stored as a byte-type value C7 in a binary file, because decimal 
+199 equals hex C7 (199 = 12 * 161 + 7). The advantage of binary files is that they are 
+more efficient to process than text files. 
+Java offers many classes for performing file input and output. These can be categorised as 
+text I/O classes and binary I/O classes. In Section 12.11, File Input and Output, you learned 
+how to read and write strings and numeric values from/to a text file using Scanner and PrintWriter.
+
+Recall that a File object encapsulates the properties of a file or a path but does not contain 
+the methods for reading/writing data from/to a file. In order to perform I/O, you need to 
+create objects using appropriate Java I/O classes. The objects contain the methods for reading/
+writing data from/to a file. For example, to write text to a file named temp.txt, you can create 
+an object using the PrintWriter class as follows:
+PrintWriter output = new PrintWriter("temp.txt");
+You can now invoke the print method on the object to write a string to the file. For example, 
+the following statement writes Java 101 to the file.
+output.print("Java 101");
+The next statement closes the file.
+output.close();
+There are many I/O classes for various purposes. In general, these can be classified as input 
+classes and output classes. An input class contains the methods to read data, and an output
+class contains the methods to write data. PrintWriter is an example of an output class, and 
+Scanner is an example of an input class.

@@ -1,0 +1,14 @@
+ Generic's let you parameterise types. With this capability, you can define a 
+class or a method with generic types that the compiler can replace with concrete types. For 
+example, Java defines a generic ArrayList class for storing the elements of a generic type. 
+From this generic class, you can create an ArrayList object for holding strings and an 
+ArrayList object for holding numbers. Here, strings and numbers are concrete types that 
+replace the generic type.
+The key benefit of generic's is to enable errors to be detected at compile time rather than 
+at runtime. A generic class or method permits you to specify allowable types of objects that 
+the class or method can work with. If you attempt to use an incompatible object, the compiler 
+will detect that error.
+This chapter explains how to define and use generic classes, interfaces, and methods and 
+demonstrates how generic's can be used to improve software reliability and readability.
+Java has allowed you to define generic classes, interfaces, and methods since JDK 1.5. Several 
+interfaces and classes in the Java API were modified using generic's.

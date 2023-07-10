@@ -1,0 +1,35 @@
+A class defines the properties and behaviours for objects.
+Object-oriented programming (OOP) involves programming using objects. An object represents an entity in the real world that can be distinctly identified. For example, a student, a 
+desk, a circle, a button, and even a loan can all be viewed as objects. An object has a unique 
+identity, state, and behaviours. 
+	 ■ The state of an object (also known as its properties or attributes) is represented by 
+	data fields with their current values. A circle object, for example, has a data field 
+	radius, which is the property that characterises a circle. A rectangle object has the 
+	data fields width and height, which are the properties that characterise a rectangle.
+	 ■ The behaviours of an object (also known as its actions) is defined by methods. To 
+invoke a method on an object is to ask the object to perform an action. For example, you may define methods named getArea() and getPerimeter() for circle 
+objects. A circle object may invoke getArea() to return its area and getPerimeter() to return its perimeter. You may also define the setRadius(radius)
+method. A circle object can invoke this method to change its radius.
+Objects of the same type are defined using a common class. A class is a template, blueprint, or contract that defines what an object’s data fields and methods will be. An object is an 
+instance of a class. You can create many instances of a class. Creating an instance is referred 
+to as instantiation. The terms object and instance are often interchangeable. The relationship 
+between classes and objects is analogous to that between an apple-pie recipe and apple pies: 
+You can make as many apple pies as you want from a single recipe. Figure 9.2 shows a class 
+named Circle and its three objects.
+A Java class uses variables to define data fields and methods to define actions. Additionally, a class provides methods of a special type, known as constructors, which are invoked to 
+create a new object. A constructor can perform any action, but constructors are designed to 
+perform initialising actions, such as initialising the data fields of objects. Figure 9.3 shows an 
+example of defining the class for circle objects.
+
+Polymorphism means that a variable of a supertype can refer to a subtype object.
+The three pillars of object-oriented programming are encapsulation, inheritance, and polymorphism. 
+You have already learned the first two. This section introduces polymorphism.
+First, let us define two useful terms: subtype and supertype. A class defines a type. A 
+type defined by a subclass is called a subtype, and a type defined by its superclass is called 
+a supertype. Therefore, you can say that Circle is a subtype of GeometricObject and 
+GeometricObject is a supertype for Circle.
+The inheritance relationship enables a subclass to inherit features from its superclass with 
+additional new features. A subclass is a specialization of its superclass; every instance of a 
+subclass is also an instance of its superclass, but not vice versa. For example, every circle 
+is a geometric object, but not every geometric object is a circle. Therefore, you can always 
+pass an instance of a subclass to a parameter of its superclass type.

@@ -1,0 +1,44 @@
+Lists, stacks, queues, and priority queues are classic data structures typically covered in a 
+data structures course.
+List
+A list is a popular data structure for storing data in sequential order—for example, a list of 
+students, a list of available rooms, a list of cities, a list of books. You can perform the following operations on a list:
+	 ■ Retrieve an element from the list.
+	 ■ Insert a new element into the list.
+	 ■ Delete an element from the list.
+	 ■ Find out how many elements are in the list.
+	 ■ Determine whether an element is in the list.
+	 ■ Check whether the list is empty.
+There are two ways to implement a list. One is to use an array to store the elements. 
+Array size is fixed. If the capacity of the array is exceeded, you need to create a new, 
+larger array and copy all the elements from the current array to the new array. The other 
+approach is to use a linked structure. A linked structure consists of nodes. Each node is 
+dynamically created to hold an element. All the nodes are linked together to form a list. 
+Stack
+A stack can be viewed as a special type of list whose elements are accessed, inserted, and 
+deleted only from the end (top), as shown in Figure 10.11. A queue represents a waiting list. 
+It can be viewed as a special type of list whose elements are inserted into the end (tail) of the 
+queue, and are accessed and deleted from the beginning (head).
+Since the insertion and deletion operations on a stack are made only at the end of the stack, 
+it is more efficient to implement a stack with an array list than a linked list. Since deletions are 
+made at the beginning of the list, it is more efficient to implement a queue using a linked list 
+than an array list.
+Queue
+An ordinary queue is a first-in, first-out data structure. Elements are appended to the end of 
+the queue and removed from the beginning. In a priority queue, elements are assigned with 
+priorities. When accessing elements, the element with the highest priority is removed first. 
+For  example, the emergency room in a hospital assigns priority numbers to patients; the 
+patient with the highest priority is treated first.
+A priority queue can be implemented using a heap, in which the root is the object with the 
+highest priority in the queue. 
+Tree
+A tree provides a hierarchical organisation in which data are stored in the nodes. 
+BinaryTree
+Recall that lists, stacks, and queues are linear structures that consist of a sequence of 
+elements. A binary tree is a hierarchical structure. It either is empty or consists of an 
+element, called the root, and two distinct binary trees, called the left subtree and right 
+subtree, either or both of which may be empty.
+A special type of binary tree called a binary search tree (BST) is often useful. A BST (with 
+no duplicate elements) has the property that for every node in the tree, the value of any node in 
+its left subtree is less than the value of the node, and the value of any node in its right subtree 
+is greater than the value of the node. 
