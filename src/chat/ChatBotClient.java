@@ -99,6 +99,9 @@ public class ChatBotClient extends Socket {
 			username = nextLine();
 			dataOutput.writeUTF(username);
 			dataOutput.flush();
+			if (username.equalsIgnoreCase("stop")) {
+				return;
+			}
 		}
 		System.out.print(dataInput.readUTF());
 		String password = nextLine();
@@ -227,14 +230,14 @@ public class ChatBotClient extends Socket {
 		dataOutput.flush();
 		
 		while (!Util.existUsername(username, mysql)) {
-			System.out.print(dataInput.readUTF());
+			System.out.println(dataInput.readUTF());
 			System.out.print(dataInput.readUTF());
 			username = nextLine();
+			dataOutput.writeUTF(username);
+			dataOutput.flush();
 			if (username.equalsIgnoreCase("stop")) {
 				return;
 			}
-			dataOutput.writeUTF(username);
-			dataOutput.flush();
 		}
 		
 		System.out.println(dataInput.readUTF());
